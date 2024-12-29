@@ -1,0 +1,35 @@
+html,
+body {
+  font-size: 62.5%;
+  margin: 0;
+}
+
+.navbar {
+  border: 3px solid black;
+  display: flex;
+  flex-direction: row;
+  height: 4rem;
+  justify-content: center;
+  margin-top: 4rem;
+  gap: 0px;
+}
+
+.navbar button {
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+
+}
+
+.left-rounded {
+  border-radius: 25px 0px 0px 25px;
+}
+
+.right-rounded {
+  border-radius: 0px 25px 25px 0px;
+}
+
+.no-rounded {
+  border-radius: 0px;
+}
