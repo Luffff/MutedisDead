@@ -4,9 +4,20 @@ body {
   margin: 0;
 }
 
+.landing {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url('./src/Images/Boyan-overlook.png');
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 0px;
+}
+
 .navbar {
   /* border: 3px solid black; */
   display: flex;
+  position: relative;
   flex-direction: row;
   height: 2.5rem;
   justify-content: center;
@@ -32,3 +43,34 @@ body {
 .no-rounded {
   border-radius: 0px;
 }
+
+
+.title {
+  font-size: 3.6rem;
+  text-align: center;
+  margin-top: 15rem;
+  margin-bottom: 20rem;
+}
+
+.email-system {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.email {
+  width: 30rem;
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 7rem;
+  margin-top: 25rem;
+  font-size: 4rem;
+}
+
