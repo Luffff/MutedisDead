@@ -5,10 +5,10 @@ body {
 }
 
 .navbar {
-  border: 3px solid black;
+  /* border: 3px solid black; */
   display: flex;
   flex-direction: row;
-  height: 4rem;
+  height: 2.5rem;
   justify-content: center;
   margin-top: 4rem;
   gap: 0px;
@@ -16,7 +16,7 @@ body {
 
 .navbar button {
   font-size: 1.6rem;
-  padding: 0.5rem 1rem;
+  padding: .5rem 3rem;
   border: none;
   cursor: pointer;
 }
