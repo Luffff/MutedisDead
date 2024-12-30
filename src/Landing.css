@@ -2,26 +2,43 @@ html,
 body {
   font-size: 62.5%;
   margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-.landing {
-  position: absolute;
-  height: 100%;
-  width: 100%;
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background:black;
+  z-index: -2;
+}
+
+
+.landing-background {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
   background: url('./src/Images/Boyan-overlook.png');
   background-size: cover;
-  background-attachment: fixed;
   margin-top: 0px;
+  border-top: 0px;
+  padding-top: 4rem;
+  /* border-bottom: 10px; */
 }
+
 
 .navbar {
   /* border: 3px solid black; */
   display: flex;
-  position: relative;
+  display: fixed;
+  right: 0;
+  left: 0;
   flex-direction: row;
   height: 2.5rem;
   justify-content: center;
-  margin-top: 4rem;
   gap: 0px;
 }
 
@@ -48,8 +65,7 @@ body {
 .title {
   font-size: 3.6rem;
   text-align: center;
-  margin-top: 15rem;
-  margin-bottom: 20rem;
+  margin-top: 15vh;
 }
 
 .email-system {
@@ -57,12 +73,28 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
+  margin-top: 25vh;
 
 }
 
 .email {
-  width: 30rem;
+  width: 25rem;
+  height: 2.5rem;
+  border-radius: 15px;
+  font-size: 1.6rem;
+  color: white;
+  text-align: center;
+  background-color: rgba(0,0,0,.5)
+  
+}
+
+.submit {
+  width: 10rem;
+  height: 3.25rem;
+  border-radius: 15px;
+  color: white;
+  background-color: rgba(0,0,0,1);
 }
 
 .socials-container {
@@ -70,7 +102,48 @@ body {
   flex-direction: row;
   justify-content: center;
   gap: 7rem;
-  margin-top: 25rem;
-  font-size: 4rem;
+  margin-top: 20vh;
+  font-size: 5rem;
 }
 
+.icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.youtube-embed {
+  display: flex;
+  text-align : center;
+  justify-content: center;
+  width: 100%;
+  z-index: 0; /* Ensure it's above background layers */
+  padding-top: 15rem;
+}
+
+.youtube-embed iframe {
+  border: none;
+  width: 100%; /* Adjusts width for responsiveness */
+  max-width: 75%;
+  height: auto;
+  aspect-ratio: auto 3840 / 2160;
+}
+
+.quote {
+  display: flex;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15vh;
+}
+
+.take-a-look{
+  display: flex;
+  font-size: 3rem;
+  color:white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15vh;
+}
