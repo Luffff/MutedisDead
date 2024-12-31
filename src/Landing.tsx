@@ -3,17 +3,14 @@ import React from "react";
 import { RiInstagramFill } from "react-icons/ri";
 import { AiFillTikTok } from "react-icons/ai";
 import { FaYoutube } from "react-icons/fa";
+import Navbar from "./Conponents/NavBar";
 
 function Landing() {
   return (
     <>
       <div className="background"></div>
       <div className="landing-background">
-        <div className="navbar">
-          <button className="left-rounded">Shop</button>
-          <button className="no-rounded">Muted</button>
-          <button className="right-rounded">Contact</button>
-        </div>
+        <Navbar />
 
         <div className="title">
           <h1>MUTED</h1>

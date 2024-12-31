@@ -1,0 +1,36 @@
+.navbar {
+    /* border: 3px solid black; */
+    display: flex;
+    display: fixed;
+    right: 0;
+    left: 0;
+    flex-direction: row;
+    height: 2.5rem;
+    justify-content: center;
+    gap: 0px;
+  }
+  
+  .navbar button {
+    font-size: 1.6rem;
+    padding: .5rem 3rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar button:hover{
+    background-color: darkgray;
+  
+  }
+  
+  .left-rounded {
+    border-radius: 25px 0px 0px 25px;
+  }
+  
+  .right-rounded {
+    border-radius: 0px 25px 25px 0px;
+  }
+  
+  .no-rounded {
+    border-radius: 0px;
+  }
+  
