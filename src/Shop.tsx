@@ -1,10 +1,12 @@
 import React from "react";
 import "./Shop.css";
+import Navbar from "./Conponents/NavBar";
 
 function Shop() {
   return (
     <>
-      <h1 className="shop-title">Shop...</h1>
+        <Navbar/>
+        <h1 className="shop-title">Shop...</h1>
     </>
   );
 }
