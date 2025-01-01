@@ -53,11 +53,12 @@ function Landing() {
           allowFullScreen
         ></iframe>
       </div>
-
-      <h2 className="quote">
-        "You can run from your dreams, but the regret of not chasing them will
-        be faster"
-      </h2>
+      <div className="quote-box">
+        <h2 className="quote">
+          "You can run from your dreams, but the regret of not chasing them will
+          be faster"
+        </h2>
+      </div>
 
       <h3 className="take-a-look"> Take A Look.</h3>
     </>
