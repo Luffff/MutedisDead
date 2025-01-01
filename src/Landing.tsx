@@ -12,8 +12,8 @@ function Landing() {
       <div className="landing-background">
         <Navbar />
 
-        <div className="title">
-          <h1>MUTED</h1>
+        <div className="glitch">
+          <h1 title="MUTED">MUTED</h1>
         </div>
 
         <div className="email-system">
