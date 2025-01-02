@@ -1,10 +1,9 @@
 @font-face {
-  font-family: 'CustomFont';
-  src: url('./assets/fonts/Zorque.otf') format('opentype');
+  font-family: "CustomFont";
+  src: url("./assets/fonts/Zorque.otf") format("opentype");
   font-weight: normal;
   font-size: normal;
 }
-
 
 html,
 body {
@@ -60,17 +59,18 @@ h1 {
 }
 
 @keyframes glitch {
-  2%, 64% {
+  2%,
+  64% {
     transform: translate(2px, 0) skew(0deg);
   }
-  4%, 60% {
+  4%,
+  60% {
     transform: translate(-2px, 0) skew(0deg);
   }
   62% {
     transform: translate(0, 0) skew(5deg);
   }
 }
-
 
 h1:before {
   animation: glitchTop 1s linear infinite;
@@ -80,10 +80,12 @@ h1:before {
 }
 
 @keyframes glitchTop {
-  2%, 64% {
+  2%,
+  64% {
     transform: translate(2px, -2px);
   }
-  4%, 60% {
+  4%,
+  60% {
     transform: translate(-2px, 2px);
   }
   62% {
@@ -98,17 +100,18 @@ h1:after {
 }
 
 @keyframes glitchBottom {
-  2%, 64% {
+  2%,
+  64% {
     transform: translate(-2px, 0);
   }
-  4%, 60% {
+  4%,
+  60% {
     transform: translate(-2px, 0);
   }
   62% {
     transform: translate(-22px, 5px) skew(21deg);
   }
 }
-
 
 .email-system {
   display: flex;
@@ -155,32 +158,37 @@ h1:after {
 .scroll-container {
   width: 100vw;
   overflow: hidden;
-  white-space: nowrap;
-  background-color: #dcdcdc6f;
+  white-space: nowrap; /* Prevent text wrapping */
+  background-color: #dcdcdc8c;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
+  font-size: 2rem;
+  text-align: center;
+  height: 5rem;
   display: flex;
+  align-items: center; 
+}
+.scroll-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 20s linear infinite;
+  gap: 4rem; /* Even spacing between each text block */
+  flex-wrap: nowrap;
+  width: max-content;
 }
 
 .scroll-text {
-  display: inline-block;
-  padding: 10px 0;
-  font-size: 24px;
-  font-weight: bold;
+  font-weight:bold;
   text-transform: uppercase;
-  animation: scroll-left 10s linear infinite;
-}
-
-.scroll-container .scroll-text:nth-child(2) {
-  animation-delay: -10.5s;
+  text-align: center;
 }
 
 @keyframes scroll-left {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
@@ -190,7 +198,7 @@ h1:after {
   justify-content: center;
   width: 100%;
   z-index: 0; /* Ensure it's above background layers */
-  padding-top: 15rem;
+  padding-top: 13rem;
 }
 
 .youtube-embed iframe {
@@ -201,7 +209,7 @@ h1:after {
   aspect-ratio: auto 3840 / 2160;
 }
 
-.quote-box{
+.quote-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -214,7 +222,6 @@ h1:after {
   width: 85%;
   border: 3px solid white;
   border-radius: 15px;
-
 }
 
 .quote {
@@ -225,7 +232,6 @@ h1:after {
   text-align: center;
   align-items: center;
   justify-content: center;
-
 }
 
 .take-a-look {

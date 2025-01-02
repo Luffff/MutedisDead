@@ -21,7 +21,6 @@ function Landing() {
           <button className="submit">Submit</button>
         </div>
 
-
         <div className="socials-container">
           <RiInstagramFill
             className="icon"
@@ -47,13 +46,27 @@ function Landing() {
       </div>
 
       <div className="scroll-container">
+        <div className="scroll-track">
           <div className="scroll-text">
-            MUTED IS DEAD IS AN FASHION AND CAR BRAND.
+            MUTED IS DEAD IS A FASHION AND CAR BRAND.
           </div>
           <div className="scroll-text">
-            MUTED IS DEAD IS AN FASHION AND CAR BRAND.
+            MUTED IS DEAD IS A FASHION AND CAR BRAND.
+          </div>
+          <div className="scroll-text">
+            MUTED IS DEAD IS A FASHION AND CAR BRAND.
+          </div>
+          <div className="scroll-text">
+            MUTED IS DEAD IS A FASHION AND CAR BRAND.
+          </div>
+          <div className="scroll-text">
+            MUTED IS DEAD IS A FASHION AND CAR BRAND.
+          </div>
+          <div className="scroll-text">
+            MUTED IS DEAD IS A FASHION AND CAR BRAND.
           </div>
         </div>
+      </div>
 
       <div className="youtube-embed">
         <iframe
