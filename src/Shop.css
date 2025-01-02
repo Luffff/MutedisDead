@@ -1,2 +1,19 @@
 .shop-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7rem;
+    color: white;
+
+}
+.nothing-yet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.shop-continer{
+    color: white;
 }

@@ -1,5 +1,5 @@
 .form-countainer{
-    padding-top: 5vh;
+    padding-top: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,8 +7,14 @@
     font-size: 3.6rem;
 }
 
+body {
+    background: black;
+    margin: 0;
+    padding: 0;
+}
+
 .border{
-    height: 75rem;
+    height: 60rem;
     width: 60rem;
     border: 1px solid black;
 
@@ -16,13 +22,18 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-color: white;
     
 }
 .form-img{
     width: 100%;
     height: 16rem;
-    background-color: orange;
-    border-bottom: 1px solid black;
+    background-image: url('./src/Images/Comment Form Picture.jpeg');
+    background-size: cover;
+    background-position: 50% 35%;
+    overflow: hidden;
+
+
 }
 .form-inputs{
     display:flex;
@@ -32,22 +43,43 @@
 .phone-form{
     height: 3rem;
     width: 40rem;
+    border: 1px solid black;
 }
-.comment-form{
-    height: 10rem;
-}
+.input-wrap {
+    width: 100%;          /* Full width of the parent container */
+    height: auto;         /* Adjusts height dynamically */
+    min-height: 10rem;     /* Ensures it starts with enough space */
+    resize: none;         /* Prevent manual resizing */
+    overflow-wrap: break-word; /* Wraps long words */
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    border: 1px solid black;
+  }
+  
 .email-form{
     height: 3rem;
-    width: 20rem;
+    width: 22rem;
+    border: 1px solid black;
 }
 .name-form{
     height: 3rem;
+    border: 1px solid black;
 }
 .name-email-group{
     display: flex;
     width: 100%;
     gap: 1rem;
     justify-content: space-between;
+
+}
+.submit-form {
+    margin-top: 1rem;
+    width: 100%;
+    height: 3rem;
+    background-color: black;
+    color: white;
 
 }
 /* .img {

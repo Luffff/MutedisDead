@@ -4,10 +4,11 @@ import Navbar from "./Conponents/NavBar";
 
 function Shop() {
   return (
-    <>
-        <Navbar/>
-        <h1 className="shop-title">Shop...</h1>
-    </>
+    <div className="shop-container">
+      <Navbar/>
+      <h2 className="shop-title">Shop</h2>
+      <text className="nothing-yet">Coming Soon...</text>
+    </div>
   );
 }
 

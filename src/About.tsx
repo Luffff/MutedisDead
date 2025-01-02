@@ -3,6 +3,7 @@ import Navbar from "./Conponents/NavBar";
 function About() {
   return (
     <div className="about-container">
+      <div className="background-color"></div>
       <Navbar />
       <div className="form-countainer">
         <div className="border">
@@ -14,7 +15,8 @@ function About() {
               <input placeholder="Email" className="email-form"></input>
             </div>
             <input placeholder="Phone Number" className="phone-form"></input>
-            <input placeholder="Comment" className="comment-form"></input>
+            <textarea className="input-wrap" placeholder="Comment"></textarea>
+            <button className="submit-form">SEND MESSAGE</button>
           </div>
         </div>
       </div>
