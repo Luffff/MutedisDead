@@ -196,10 +196,12 @@ h1:after {
 }
 
 .product-text{
+  display:flex;
   padding-top: 1.5rem;
   padding-left: 2rem;;
   font-size: 3rem;
-  color:white
+  color:white;
+  justify-content: center;
 }
 
 .price {
@@ -227,7 +229,7 @@ h1:after {
 
 .scroll-track {
   display: flex;
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-left 30s linear infinite;
   gap: 4rem; /* Even spacing between each text block */
   flex-wrap: nowrap;
   width: max-content;
