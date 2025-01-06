@@ -1,5 +1,5 @@
 .form-countainer{
-    padding-top: 10vh;
+    padding-top: 12vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,6 +81,13 @@ body {
     background-color: black;
     color: white;
 
+}
+.submit-form:hover {
+    cursor: pointer;
+}
+.submit-form:active{
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 /* .img {
     width: 300px;

@@ -1,16 +1,10 @@
-@font-face {
-  font-family: "CustomFont";
-  src: url("./assets/fonts/Zorque.otf") format("opentype");
-  font-weight: normal;
-  font-size: normal;
-}
-
 html,
 body {
   font-size: 62.5%;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
 }
 
 .background {
@@ -140,6 +134,10 @@ h1:after {
   color: white;
   background-color: rgba(0, 0, 0, 1);
 }
+.submit:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
 
 .socials-container {
   display: flex;
@@ -155,6 +153,63 @@ h1:after {
   transform: scale(1.2);
 }
 
+.store-header{
+  font-size: 3.5rem;
+}
+
+.store{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 7rem;
+  gap: 3rem;
+}
+.store-header{
+  color: white;
+}
+
+.store-items{
+  display:flex;
+  height: 45rem;
+  width: 100%;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.store-item{
+  height: 90%;
+  width: 20%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+
+}
+
+.store-product{
+  width: 100%;
+  height: 83%;
+  background: url("./src/Images/Comment Form Picture.jpeg");
+  background-size: cover;
+  border-bottom: 1px solid white;
+}
+
+.product-text{
+  padding-top: 1.5rem;
+  padding-left: 2rem;;
+  font-size: 3rem;
+  color:white
+}
+
+.price {
+  padding-top: .1rem;
+  padding-left: 2rem;;
+  font-size: 2.5rem;
+  color:white
+}
+
+
 .scroll-container {
   width: 100vw;
   overflow: hidden;
@@ -166,19 +221,29 @@ h1:after {
   text-align: center;
   height: 5rem;
   display: flex;
-  align-items: center; 
+  align-items: center;
+  position: relative;
 }
+
 .scroll-track {
   display: flex;
-  width: max-content;
   animation: scroll-left 20s linear infinite;
   gap: 4rem; /* Even spacing between each text block */
   flex-wrap: nowrap;
   width: max-content;
 }
 
+/* Duplicate content will ensure seamless scrolling */
+.scroll-track::after {
+  content: "";
+  display: flex;
+  gap: 4rem;
+  /* Duplicate the content visually */
+  content: attr(data-text) attr(data-text);
+}
+
 .scroll-text {
-  font-weight:bold;
+  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 }
@@ -191,6 +256,7 @@ h1:after {
     transform: translateX(-50%);
   }
 }
+
 
 .youtube-embed {
   display: flex;
@@ -216,10 +282,9 @@ h1:after {
   align-items: center;
 
   margin: 5rem auto 0 auto;
-  height: 12rem;
-  height: 12rem;
+  height: 7rem;
   background-color: black;
-  width: 85%;
+  width: 70%;
   border: 3px solid white;
   border-radius: 15px;
 }
@@ -242,4 +307,14 @@ h1:after {
   align-items: center;
   justify-content: center;
   margin-top: 15vh;
+}
+
+.deadmid {
+  background: url('./src/Images/DeadBoyan.jpg');
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+  margin-top: 0px;
+  border-top: 0px;
 }

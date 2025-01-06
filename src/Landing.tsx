@@ -65,12 +65,47 @@ function Landing() {
           <div className="scroll-text">
             MUTED IS DEAD IS A FASHION AND CAR BRAND.
           </div>
+          <div className="scroll-text">
+            MUTED IS DEAD IS A FASHION AND CAR BRAND.
+          </div>
+          <div className="scroll-text">
+            MUTED IS DEAD IS A FASHION AND CAR BRAND.
+          </div>
+          <div className="scroll-text">
+            MUTED IS DEAD IS A FASHION AND CAR BRAND.
+          </div>
+          <div className="scroll-text">
+            MUTED IS DEAD IS A FASHION AND CAR BRAND.
+          </div>
+          <div className="scroll-text">
+            MUTED IS DEAD IS A FASHION AND CAR BRAND.
+          </div>
+          <div className="scroll-text">
+            MUTED IS DEAD IS A FASHION AND CAR BRAND.
+          </div>
         </div>
+      </div>
+      <div className="store">
+      <text className="store-header">FUTURE ITEMS.</text>
+      <div className="store-items">
+        <div className="store-item">
+          <div className="store-product p1"></div>
+          <text className="product-text pt">Product 1</text>
+        </div>
+        <div className="store-item">
+          <div className="store-product p2"></div>
+          <text className="product-text pt">Product 2</text>
+        </div>
+        <div className="store-item">
+          <div className="store-product p3"></div>
+          <text className="product-text t3">Product 3</text>
+        </div>
+      </div>
       </div>
 
       <div className="youtube-embed">
         <iframe
-          src="https://www.youtube.com/embed/2h9CqRlHzrc"
+          src="https://www.youtube.com/embed/nFhCsx4LevA?si"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
@@ -84,6 +119,7 @@ function Landing() {
       </div>
 
       <h3 className="take-a-look"> Take A Look.</h3>
+      <div className="deadmid"></div>
     </>
   );
 }
