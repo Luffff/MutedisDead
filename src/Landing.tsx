@@ -7,7 +7,7 @@ import Navbar from "./Conponents/NavBar";
 
 function Landing() {
   return (
-    <>
+    <div>
       <div className="background"></div>
       <div className="landing-background">
         <Navbar />
@@ -85,42 +85,88 @@ function Landing() {
           </div>
         </div>
       </div>
-      <div className="store">
-      <text className="store-header">FUTURE ITEMS.</text>
-      <div className="store-items">
-        <div className="store-item">
-          <div className="store-product p1"></div>
-          <text className="product-text pt">Product 1</text>
+      {/* add animation on div below  */}
+      <div className="">
+        <div className="store">
+        <text className="store-header">FUTURE ITEMS.</text>
+        <div className="store-items">
+          <div className="store-item">
+            <div className="store-product p1"></div>
+            <text className="product-text pt">Product 1</text>
+          </div>
+          <div className="store-item">
+            <div className="store-product p2"></div>
+            <text className="product-text pt">Product 2</text>
+          </div>
+          <div className="store-item">
+            <div className="store-product p3"></div>
+            <text className="product-text t3">Product 3</text>
+          </div>
         </div>
-        <div className="store-item">
-          <div className="store-product p2"></div>
-          <text className="product-text pt">Product 2</text>
         </div>
-        <div className="store-item">
-          <div className="store-product p3"></div>
-          <text className="product-text t3">Product 3</text>
-        </div>
-      </div>
-      </div>
 
-      <div className="youtube-embed">
-        <iframe
-          src="https://www.youtube.com/embed/nFhCsx4LevA?si"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-      </div>
-      <div className="quote-box">
-        <h2 className="quote">
-          "You can run from your dreams, but the regret of not chasing them will
-          be faster"
-        </h2>
-      </div>
+        <div className="youtube-embed">
+          <iframe
+            src="https://www.youtube.com/embed/nFhCsx4LevA?si"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <div className="quote-box">
+          <h2 className="quote">
+            "You can run from your dreams, but the regret of not chasing them will
+            be faster"
+          </h2>
+        </div>
 
-      <h3 className="take-a-look"> Take A Look.</h3>
-      <div className="deadmid"></div>
-    </>
+        <h3 className="take-a-look"> TAKE A LOOK.</h3>
+
+        <div className="socials">
+          <div className="social-box insta-box">
+              <div className="title-social">
+                <text className="social-title">INSTAGRAM</text>
+                <div className="social-container">
+                <div className="grid-item"></div>
+                <div className="grid-item"></div>
+                <div className="grid-item"></div>
+                <div className="grid-item"></div>
+                <div className="grid-item"></div>
+                <div className="grid-item"></div>
+                <div className="grid-item"></div>
+                <div className="grid-item"></div>
+                <div className="grid-item"></div>
+              </div>
+                <div className="social-click">INSTAGRAM →</div>
+              </div>
+          </div>
+          <div className="social-box yt-box">
+            <div className="title-social">
+              <text className="social-title">YOUTUBE</text>
+              <div className="social-container">
+                <div className="grid-item"></div>
+                <div className="grid-item"></div>
+                <div className="grid-item"></div>
+                <div className="grid-item"></div>
+                <div className="grid-item"></div>
+                <div className="grid-item"></div>
+                <div className="grid-item"></div>
+                <div className="grid-item"></div>
+                <div className="grid-item"></div>
+              </div>
+              <div className="social-click">YOUTUBE →</div>
+            </div>
+          </div>
+        </div>
+        <div className="deadmid"></div>
+        <div className="end-comment">
+          <div className="end-comment-box">
+          <text className="end-comment-text">MUTED IS DEAD</text>
+          </div>
+
+        </div>
+      </div>
+    </div>
   );
 }
 
