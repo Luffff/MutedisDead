@@ -17,7 +17,7 @@ function Landing() {
         </div>
 
         <div className="email-system">
-          <input type="email" className="email"></input>
+          <input type="email" placeholder="Email" className="email"></input>
           <button className="submit">Submit</button>
         </div>
 

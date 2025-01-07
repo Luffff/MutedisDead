@@ -8,7 +8,7 @@ function About() {
       <div className="form-countainer">
         <div className="border">
           <div className="form-img"></div>
-          <h4>CONNECT FORM</h4>
+          <h4>CONTACT FORM</h4>
           <div className="form-inputs">
             <div className="name-email-group">
               <input placeholder="Name" className="name-form"></input>
