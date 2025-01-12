@@ -4,10 +4,8 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-
-
 
 .background {
   position: fixed;
@@ -110,41 +108,6 @@ h1:after {
   }
 }
 
-.email-system {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 25vh;
-}
-
-.email {
-  width: 25rem;
-  height: 2.5rem;
-  border-radius: 15px;
-  font-size: 1.6rem;
-  color: white;
-  border-color: white;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.email::placeholder{
-  color: light-grey;
-}
-
-.submit {
-  width: 10rem;
-  height: 3.25rem;
-  border-radius: 15px;
-  color: white;
-  background-color: rgba(0, 0, 0, 1);
-}
-.submit:hover{
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
 .socials-container {
   display: flex;
   flex-direction: row;
@@ -159,32 +122,33 @@ h1:after {
   transform: scale(1.2);
 }
 
-.store-header{
-  font-size: 3.5rem;
+.store-header {
+  font-size: 35px;
 }
 
-.store{
-  display:flex;
+.store {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 7rem;
-  gap: 3rem;
+  padding-top: 70px;
+  gap: 30px;
 }
-.store-header{
+.store-header {
   color: white;
+  font-size: 35px;
 }
 
-.store-items{
-  display:flex;
-  height: 45rem;
-  width: 100%;
-  padding-top: 2rem;
-  gap: 3rem;
+.store-items {
+  display: flex;
+  height: 450px;
+  width: 1700px;
+  padding-top: 20px;
+  gap: 30px;
   justify-content: center;
 }
 
-.store-item{
+.store-item {
   height: 90%;
   width: 20%;
   background-color: black;
@@ -193,11 +157,11 @@ h1:after {
   border: 1px solid white;
 }
 
-.store-item:hover{
+.store-item:hover {
   transform: scale(1.03);
 }
 
-.store-product{
+.store-product {
   width: 100%;
   height: 83%;
   background: url("./src/Images/Comment Form Picture.jpeg");
@@ -205,22 +169,21 @@ h1:after {
   border-bottom: 1px solid white;
 }
 
-.product-text{
-  display:flex;
-  padding-top: 1.5rem;
-  padding-left: 2rem;;
-  font-size: 3rem;
-  color:white;
+.product-text {
+  display: flex;
+  padding-top: 15px;
+  padding-left: 20px;
+  font-size: 30px;
+  color: white;
   justify-content: center;
 }
 
 .price {
-  padding-top: .1rem;
-  padding-left: 2rem;;
-  font-size: 2.5rem;
-  color:white
+  padding-top: 1px;
+  padding-left: 20px;
+  font-size: 25px;
+  color: white;
 }
-
 
 .scroll-container {
   width: 100vw;
@@ -269,14 +232,13 @@ h1:after {
   }
 }
 
-
 .youtube-embed {
   display: flex;
   text-align: center;
   justify-content: center;
   width: 100%;
   z-index: 0; /* Ensure it's above background layers */
-  padding-top: 13rem;
+  padding-top: 10a rem;
 }
 
 .youtube-embed iframe {
@@ -321,54 +283,53 @@ h1:after {
   margin-top: 15vh;
 }
 
-.socials{
-  display:flex;
+.socials {
+  display: flex;
   align-items: center;
   justify-content: center;
-  height: 55rem;
+  height: 550px;
   margin-bottom: 10rem;
   gap: 10rem;
 }
-.social-box{
+.social-box {
   width: 30%;
-  height:100%;
+  height: 550px;
   background-color: black;
   border: 1px solid white;
   border-radius: 15px;
 }
 
-.title-social{
-  display:flex;
+.title-social {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.social-title{
+.social-title {
   font-size: 2.25rem;
   padding-top: 3.5rem;
-  color:white;
+  color: white;
 }
 
-.social-container{
-  display:grid;
+.social-container {
+  display: grid;
   margin-top: 4rem;
   grid-template-columns: 12rem 12rem 12rem;
   grid-template-rows: 12rem 12rem 12rem;
   background-color: blue;
   border: 1px solid black;
 }
-.grid-item{
-  display:flex;
+.grid-item {
+  display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   border: 1px solid white;
   background: url("./src/Images/Boyanlookingdown.jpg");
   background-size: cover;
-
 }
 
-.social-click{
+.social-click {
   font-size: 1.5rem;
   color: white;
   margin-top: 2rem;
@@ -378,7 +339,7 @@ h1:after {
 }
 
 .deadmid {
-  background: url('./src/Images/DeadBoyan.jpg');
+  background: url("./src/Images/DeadBoyan.jpg");
   display: flex;
   width: 100vw;
   min-height: 100vh;
@@ -387,23 +348,75 @@ h1:after {
   border-top: 0px;
 }
 
-.end-comment{
+.end-comment {
   margin-top: 12rem;
   display: flex;
   height: 40rem;
   justify-content: center;
   align-items: center;
 }
-.end-comment-box{
+.end-comment-box {
   width: 99%;
   height: 99%;
   background-color: black;
   border: 1px solid white;
 }
-.end-comment-text{
+.end-comment-text {
   padding-top: 18rem;
-  display:flex;
+  display: flex;
   font-size: 5rem;
-  color:white;
+  color: white;
   justify-content: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .store {
+    display: none;
+  }
+  .quote-box {
+    width: 80%;
+  }
+  .quote {
+    font-size: 2rem;
+  }
+  .socials {
+    padding-top: 15rem;
+    padding-bottom: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .social-box {
+    width: 60%;
+    height: 550px;
+  }
+  .social-box {
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .store {
+    display: none;
+  }
+  .quote-box {
+    width: 90%;
+  }
+  .quote {
+    font-size: 1.5rem;
+  }
+  .socials {
+    padding-top: 15rem;
+    padding-bottom: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .social-box {
+    width: 80%;
+    height: 550px;
+  }
+  .social-box {
+    padding-bottom: 2rem;
+  }
 }

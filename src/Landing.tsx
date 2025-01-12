@@ -4,6 +4,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import { AiFillTikTok } from "react-icons/ai";
 import { FaYoutube } from "react-icons/fa";
 import Navbar from "./Conponents/NavBar";
+import Email from "./Conponents/Email";
 
 function Landing() {
   return (
@@ -16,10 +17,7 @@ function Landing() {
           <h1 title="MUTED">MUTED</h1>
         </div>
 
-        <div className="email-system">
-          <input type="email" placeholder="Email" className="email"></input>
-          <button className="submit">Submit</button>
-        </div>
+        <Email/>
 
         <div className="socials-container">
           <RiInstagramFill
@@ -103,7 +101,7 @@ function Landing() {
             <text className="product-text t3">Product 3</text>
           </div>
         </div>
-        </div>
+      </div>
 
         <div className="youtube-embed">
           <iframe

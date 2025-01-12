@@ -1,0 +1,39 @@
+.email-system {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 25vh;
+  }
+  
+  .email {
+    width: 25rem;
+    height: 2.5rem;
+    border-radius: 15px;
+    font-size: 1.6rem;
+    color: white;
+    border-color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .email::placeholder{
+    color: light-grey;
+  }
+  
+  .submit {
+    width: 10rem;
+    height: 3.25rem;
+    border-radius: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+  }
+  .submit:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .result-message {
+    color: white;
+    font-size: 1.6rem;
+  }

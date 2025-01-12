@@ -1,94 +1,113 @@
-.form-countainer{
-    padding-top: 12vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 3.6rem;
-}
-
 body {
     background: black;
     margin: 0;
     padding: 0;
 }
 
-.border{
-    height: 60rem;
-    width: 60rem;
-    border: 1px solid black;
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem; /* Adjust or remove if causing issues */
+    height: 100vh;
+    font-size: 3.6rem;
+    box-sizing: border-box;
+}
 
+.border {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    height: 60rem;
+    width: 60rem;
+    border: 1px solid black;
     background-color: white;
-    
+    margin: 0; /* Ensure no margin offsets the position */
+    box-sizing: border-box;
 }
-.form-img{
+
+.contact-name {
+    padding-top: 2rem;
+    font-size: 3.6rem;
+    margin-top: 1rem;
+}
+
+.form-img {
     width: 100%;
     height: 16rem;
     background-image: url('./src/Images/Comment Form Picture.jpeg');
     background-size: cover;
     background-position: 50% 35%;
     overflow: hidden;
-
-
 }
-.form-inputs{
-    display:flex;
+
+.form-inputs {
+    display: flex;
     flex-direction: column;
     gap: 1.25rem;
 }
-.phone-form{
+
+.phone-form {
     height: 3rem;
     width: 40rem;
     border: 1px solid black;
 }
+
 .input-wrap {
-    width: 100%;          /* Full width of the parent container */
-    height: auto;         /* Adjusts height dynamically */
-    min-height: 10rem;     /* Ensures it starts with enough space */
-    resize: none;         /* Prevent manual resizing */
-    overflow-wrap: break-word; /* Wraps long words */
-    border: 1px solid #ccc;
-    padding: 0.5rem;
-    box-sizing: border-box;
-    font-size: 1.6rem;
-    border: 1px solid black;
-  }
-  
-.email-form{
+    width: 100%; /* Full width of the parent container */
+    min-height: 10rem; /* Ensures it starts with enough space */
+    padding: 0.5rem; /* Adds padding inside the box */
+    box-sizing: border-box; /* Includes padding in width and height */
+    font-size: 1.6rem; /* Adjusts font size */
+    line-height: 1.5; /* Improves readability */
+    border: 1px solid black; /* Adds border for styling */
+    resize: none; /* Prevents manual resizing */
+    overflow-wrap: break-word; /* Breaks long words */
+    word-wrap: break-word; /* Ensures words wrap correctly */
+    white-space: pre-wrap; /* Ensures wrapping and preserves whitespace */
+    overflow-y: auto; /* Enables vertical scroll if needed */
+    overflow-x: hidden; /* Disables horizontal scrolling */
+}
+
+
+
+.email-form {
     height: 3rem;
     width: 22rem;
     border: 1px solid black;
 }
-.name-form{
+
+.name-form {
     height: 3rem;
     border: 1px solid black;
 }
-.name-email-group{
+
+.name-email-group {
     display: flex;
     width: 100%;
     gap: 1rem;
     justify-content: space-between;
-
 }
+
 .submit-form {
     margin-top: 1rem;
     width: 100%;
     height: 3rem;
     background-color: black;
     color: white;
-
 }
+
 .submit-form:hover {
     cursor: pointer;
 }
-.submit-form:active{
+
+.submit-form:active {
     transform: translateY(2px);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
 /* .img {
     width: 300px;
     height: 150px;
