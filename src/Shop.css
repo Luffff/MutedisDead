@@ -4,6 +4,7 @@
     justify-content: center;
     font-size: 7rem;
     color: white;
+    padding-top: 10rem;
 
 }
 .nothing-yet{
@@ -15,5 +16,7 @@
 }
 
 .shop-continer{
-    color: white;
+   background-color: black;
+   height: 100vh;
+   width: 100vw;
 }

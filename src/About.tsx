@@ -48,43 +48,45 @@ function About() {
   };
 
   return (
-    <div className="about-container">
-      <div className="background-color"></div>
-      <Navbar />
-      <div className="form-container">
-        <div className="border">
-          <div className="form-img"></div>
-            <h4 className="contact-name">CONTACT FORM</h4>
-          <div className="form-inputs">
-            <div className="name-email-group">
+    <>
+      <div className="about-container">
+        <Navbar />
+        <div className="background-color"></div>
+        <div className="form-container">
+          <div className="border">
+            <div className="form-img"></div>
+              <h4 className="contact-name">CONTACT FORM</h4>
+            <div className="form-inputs">
+              <div className="name-email-group">
+                <input
+                  placeholder="Name"
+                  className="name-form"
+                  onChange={(a) => setName(a.target.value)}
+                />
+                <input
+                  placeholder="Email"
+                  className="email-form"
+                  onChange={(a) => setEmail(a.target.value)}
+                />
+              </div>
               <input
-                placeholder="Name"
-                className="name-form"
-                onChange={(a) => setName(a.target.value)}
+                placeholder="Phone Number"
+                className="phone-form"
+                onChange={(a) => setPhone(a.target.value)}
               />
-              <input
-                placeholder="Email"
-                className="email-form"
-                onChange={(a) => setEmail(a.target.value)}
+              <textarea
+                className="input-wrap"
+                placeholder="Comment"
+                onChange={(a) => setComment(a.target.value)}
               />
+              <button className="submit-form" onClick={handleSubmit}>
+                SEND MESSAGE
+              </button>
             </div>
-            <input
-              placeholder="Phone Number"
-              className="phone-form"
-              onChange={(a) => setPhone(a.target.value)}
-            />
-            <textarea
-              className="input-wrap"
-              placeholder="Comment"
-              onChange={(a) => setComment(a.target.value)}
-            />
-            <button className="submit-form" onClick={handleSubmit}>
-              SEND MESSAGE
-            </button>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

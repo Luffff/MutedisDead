@@ -25,7 +25,7 @@ body {
   min-height: 100vh;
   background: url("./src/Images/Boyan-overlook.png");
   background-size: cover;
-  padding-top: 2rem; /* for some reason removes spacing from the top */
+  padding-top: 6rem; /* for some reason removes spacing from the top */
 }
 
 .glitch {
