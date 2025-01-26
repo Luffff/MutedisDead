@@ -2,6 +2,7 @@
     /* border: 3px solid black; */
     display: flex;
     display: fixed;
+    position: fixed;
     right: 0;
     left: 0;
     flex-direction: row;
@@ -9,6 +10,8 @@
     justify-content: center;
     gap: 0px;
     padding-top: 4rem;
+    z-index: 1000;
+
   }
   
   .navbar button {
@@ -16,6 +19,9 @@
     padding: .5rem 3rem;
     border: none;
     cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: background-color 0.3 ease;
+    backdrop-filter: blur(10px);
   }
   
   .navbar button:hover{
