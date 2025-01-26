@@ -21,7 +21,7 @@ body {
 
 .landing-background {
   position: relative;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background: url("./src/Images/Boyan-overlook.png");
   background-size: cover;
@@ -186,7 +186,7 @@ h1:after {
 }
 
 .scroll-container {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   white-space: nowrap; /* Prevent text wrapping */
   background-color: #dcdcdc8c;
@@ -341,7 +341,7 @@ h1:after {
 .deadmid {
   background: url("./src/Images/DeadBoyan.jpg");
   display: flex;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background-size: cover;
   margin-top: 0px;
