@@ -30,7 +30,7 @@ function Email() {
     <div className="email-system">
       <input
         type="email"
-        placeholder="Email"
+        placeholder="E-Mail List"
         className="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
