@@ -3,6 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const emailRoutes = require('./routes/emailRoutes');
+const contactRoutes = require('./routes/contactRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -12,6 +13,7 @@ app.use(express.json());
 //app.use(cors({ origin: 'http://localhost:5173' })); // Ensure this matches your frontend
 app.use(cors());
 app.use('/api/emails', emailRoutes);
+app.use('/api/contact', contactRoutes);
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI, {

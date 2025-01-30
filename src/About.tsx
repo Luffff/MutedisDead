@@ -1,6 +1,7 @@
 import "./About.css";
 import Navbar from "./Conponents/NavBar";
 import { useState } from "react";
+import axios from "axios";
 
 function About() {
   const [name, setName] = useState<string>("");
@@ -10,19 +11,26 @@ function About() {
 
   const hasLetters = (str: string): boolean => /[A-Za-z]/.test(str);
 
-  const handlePhoneCheck = () => {
-    if (!hasLetters(phone)) {
-      if (phone.includes("-")) {
-        setPhone(phone.replace("-", ""));
-      }
+  const handlePhoneCheck = (rawPhone: string) => {
+    if (!hasLetters(rawPhone)) {
+      return rawPhone.replace(/[^0-9]/g, ""); // Removes all non-numeric characters
     } else {
       alert("Please enter a valid phone number");
+      return phone; // Keep the previous valid state
     }
   };
 
-  const handleSubmit = () => {
-    handlePhoneCheck();
+  const addContact = async () => {
+    try {
+      const newContact = { email, name, phoneNumber: phone, comment };
+      const response = await axios.post("http://localhost:5000/api/contact", newContact);
+      console.log("Contact added:", response.data);
+    } catch (error) {
+      console.error("Error adding contact:", error);
+    }
+  };
 
+  const handleSubmit = async () => {
     if (name === "" || email === "" || phone === "" || comment === "") {
       alert("Please fill out all fields.");
       return;
@@ -33,18 +41,8 @@ function About() {
       return;
     }
 
-    // Process the form data
-    const prep_phone = phone.toLowerCase();
-    const prep_name = name.toLowerCase();
-    const prep_comment = comment.toLowerCase();
-    const prep_email = email.toLowerCase();
-
-    console.log("Processed Data:", {
-      prep_phone,
-      prep_name,
-      prep_comment,
-      prep_email,
-    });
+    await addContact();
+    console.log("Processed Data:", { name, email, phone, comment });
   };
 
   return (
@@ -55,29 +53,33 @@ function About() {
         <div className="form-container">
           <div className="border">
             <div className="form-img"></div>
-              <h4 className="contact-name">CONTACT FORM</h4>
+            <h4 className="contact-name">CONTACT FORM</h4>
             <div className="form-inputs">
               <div className="name-email-group">
                 <input
                   placeholder="Name"
                   className="name-form"
-                  onChange={(a) => setName(a.target.value)}
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
                 <input
                   placeholder="Email"
                   className="email-form"
-                  onChange={(a) => setEmail(a.target.value)}
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <input
                 placeholder="Phone Number"
                 className="phone-form"
-                onChange={(a) => setPhone(a.target.value)}
+                value={phone}
+                onChange={(e) => setPhone(handlePhoneCheck(e.target.value))}
               />
               <textarea
                 className="input-wrap"
                 placeholder="Comment"
-                onChange={(a) => setComment(a.target.value)}
+                value={comment}
+                onChange={(e) => setComment(e.target.value)}
               />
               <button className="submit-form" onClick={handleSubmit}>
                 SEND MESSAGE
