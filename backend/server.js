@@ -5,11 +5,12 @@ const cors = require('cors');
 const emailRoutes = require('./routes/emailRoutes');
 
 const app = express();
-const PORT = process.env.PORT || 27017;
+const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(express.json());
-//app.use(cors({ origin: 'http://localhost:27017' })); // Ensure this matches your frontend
+//app.use(cors({ origin: 'http://localhost:5173' })); // Ensure this matches your frontend
+app.use(cors());
 app.use('/api/emails', emailRoutes);
 
 // Connect to MongoDB
