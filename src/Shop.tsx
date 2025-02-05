@@ -2,6 +2,7 @@ import React from "react";
 import "./Shop.css";
 import Navbar from "./Conponents/NavBar";
 
+
 function Shop() {
   return (
     <div>
